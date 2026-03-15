@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import LoadingSpinner from './components/common/LoadingSpinner';
@@ -10,34 +10,35 @@ import { ThemeProvider } from './context/ThemeContext';
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import { usePerformanceMonitoring } from './hooks/usePerformanceMonitoring';
+import { lazyWithRetry } from './utils/lazyWithRetry';
 import './App.css';
 
-const HomePage = lazy(() => import('./pages/HomePage'));
-const StorePage = lazy(() => import('./pages/StorePage'));
-const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'));
-const CartPage = lazy(() => import('./pages/CartPage'));
-const BookTablePage = lazy(() => import('./pages/BookTablePage'));
-const MenuPage = lazy(() => import('./pages/MenuPage'));
-const RegisterPage = lazy(() => import('./pages/RegisterPage'));
-const LoginPage = lazy(() => import('./pages/LoginPage'));
-const CateringPage = lazy(() => import('./pages/CateringPage'));
+const HomePage = lazyWithRetry(() => import('./pages/HomePage'), 'HomePage');
+const StorePage = lazyWithRetry(() => import('./pages/StorePage'), 'StorePage');
+const ProductDetailPage = lazyWithRetry(() => import('./pages/ProductDetailPage'), 'ProductDetailPage');
+const CartPage = lazyWithRetry(() => import('./pages/CartPage'), 'CartPage');
+const BookTablePage = lazyWithRetry(() => import('./pages/BookTablePage'), 'BookTablePage');
+const MenuPage = lazyWithRetry(() => import('./pages/MenuPage'), 'MenuPage');
+const RegisterPage = lazyWithRetry(() => import('./pages/RegisterPage'), 'RegisterPage');
+const LoginPage = lazyWithRetry(() => import('./pages/LoginPage'), 'LoginPage');
+const CateringPage = lazyWithRetry(() => import('./pages/CateringPage'), 'CateringPage');
 
-const CheckoutPage = lazy(() => import('./pages/CheckoutPage'));
-const ProfilePage = lazy(() => import('./pages/ProfilePage'));
+const CheckoutPage = lazyWithRetry(() => import('./pages/CheckoutPage'), 'CheckoutPage');
+const ProfilePage = lazyWithRetry(() => import('./pages/ProfilePage'), 'ProfilePage');
 // Admin routes with separate chunk for better code splitting
-const AdminDashboard = lazy(() => import(/* webpackChunkName: "admin" */ './pages/admin/AdminDashboard'));
-const OrderConfirmationPage = lazy(() => import('./pages/OrderConfirmationPage'));
-const TermsOfServicePage = lazy(() => import('./pages/TermsOfServicePage'));
-const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
-const AboutPage = lazy(() => import('./pages/AboutPage'));
-const ContactPage = lazy(() => import('./pages/ContactPage'));
-const OrdersPage = lazy(() => import('./pages/OrdersPage'));
-const BookingsPage = lazy(() => import('./pages/BookingsPage'));
-const FavouritesPage = lazy(() => import('./pages/FavouritesPage'));
-const DriverDashboard = lazy(() => import('./pages/DriverDashboard'));
+const AdminDashboard = lazyWithRetry(() => import(/* webpackChunkName: "admin" */ './pages/admin/AdminDashboard'), 'AdminDashboard');
+const OrderConfirmationPage = lazyWithRetry(() => import('./pages/OrderConfirmationPage'), 'OrderConfirmationPage');
+const TermsOfServicePage = lazyWithRetry(() => import('./pages/TermsOfServicePage'), 'TermsOfServicePage');
+const PrivacyPolicyPage = lazyWithRetry(() => import('./pages/PrivacyPolicyPage'), 'PrivacyPolicyPage');
+const AboutPage = lazyWithRetry(() => import('./pages/AboutPage'), 'AboutPage');
+const ContactPage = lazyWithRetry(() => import('./pages/ContactPage'), 'ContactPage');
+const OrdersPage = lazyWithRetry(() => import('./pages/OrdersPage'), 'OrdersPage');
+const BookingsPage = lazyWithRetry(() => import('./pages/BookingsPage'), 'BookingsPage');
+const FavouritesPage = lazyWithRetry(() => import('./pages/FavouritesPage'), 'FavouritesPage');
+const DriverDashboard = lazyWithRetry(() => import('./pages/DriverDashboard'), 'DriverDashboard');
 const ForgotPasswordPage = () => <div className="text-center text-2xl">Forgot Password Page - To be implemented</div>;
 
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const NotFoundPage = lazyWithRetry(() => import('./pages/NotFoundPage'), 'NotFoundPage');
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

@@ -2,7 +2,7 @@
 
 A comprehensive NestJS-based backend API for the SU Curries e-commerce platform, featuring product management, order processing, user authentication, and business services.
 
-## 🚀 Features
+##  Features
 
 ### Core Business Features
 - **Product Catalog System**: Complete product and category management with search, filtering, and inventory tracking
@@ -19,13 +19,13 @@ A comprehensive NestJS-based backend API for the SU Curries e-commerce platform,
 - **Security**: Password hashing, CORS, rate limiting ready
 - **Internationalization**: Multi-language support ready
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js (v16 or higher)
 - PostgreSQL database
 - npm or yarn package manager
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 1. **Clone and install dependencies:**
 ```bash
@@ -76,13 +76,13 @@ npm run build
 npm run start:prod
 ```
 
-## 📚 API Documentation
+##  API Documentation
 
 Once running, access the interactive API documentation:
 - **Swagger UI**: http://localhost:3000/api
 - **JSON Schema**: http://localhost:3000/api-json
 
-## 🧪 Testing the API
+##  Testing the API
 
 Use the provided test file with REST Client extension in VS Code:
 
@@ -117,7 +117,7 @@ Use the provided test file with REST Client extension in VS Code:
 - `POST /users/profile/addresses` - Add address
 - `PATCH /users/profile/password` - Change password
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 backend/
@@ -137,7 +137,7 @@ backend/
 └── package.json
 ```
 
-## 🔐 Authentication & Authorization
+##  Authentication & Authorization
 
 The API uses JWT-based authentication with role-based access control:
 
@@ -150,7 +150,7 @@ The API uses JWT-based authentication with role-based access control:
 - `POST`, `PATCH`, `DELETE` operations require authentication
 - Admin-only endpoints are clearly marked in the documentation
 
-## 📊 Database Schema
+##  Database Schema
 
 ### Core Entities
 - **Users**: User accounts with profiles and addresses
@@ -165,7 +165,7 @@ The API uses JWT-based authentication with role-based access control:
 - Orders contain multiple order items
 - Each order item references a product
 
-## 🚀 Deployment
+##  Deployment
 
 ### Environment Variables for Production
 ```env
@@ -188,7 +188,7 @@ EXPOSE 3000
 CMD ["npm", "run", "start:prod"]
 ```
 
-## 🧪 Development
+##  Development
 
 ### Available Scripts
 ```bash
@@ -207,7 +207,7 @@ npm run format         # Format code
 - TypeScript for type safety
 - Class-validator for request validation
 
-## 🔧 Configuration
+##  Configuration
 
 ### Database Configuration
 Located in `src/config/database.config.ts` - supports PostgreSQL with TypeORM.
@@ -218,7 +218,7 @@ Located in `src/config/jwt.config.ts` - configurable token expiration and secret
 ### CORS Configuration
 Configured in `main.ts` - adjust for your frontend domain.
 
-## 📈 Performance & Scalability
+##  Performance & Scalability
 
 - Database indexing on frequently queried fields
 - Pagination for large datasets
@@ -226,7 +226,7 @@ Configured in `main.ts` - adjust for your frontend domain.
 - Ready for caching layer integration
 - Stateless JWT authentication for horizontal scaling
 
-## 🤝 Contributing
+##  Contributing
 
 1. Follow the existing code structure
 2. Add proper validation to DTOs
@@ -234,7 +234,7 @@ Configured in `main.ts` - adjust for your frontend domain.
 4. Write tests for new features
 5. Follow TypeScript best practices
 
-## 📝 License
+##  License
 
 This project is proprietary software for SU Curries.
 

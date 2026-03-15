@@ -1,17 +1,17 @@
-# 🍛 SU Curries - Easy Setup Guide
+#  SU Curries - Easy Setup Guide
 
 ## For Non-Technical Users
 
 This restaurant website is designed to be **super easy** to run! No complex database setup required.
 
-## ✨ What You Get
+##  What You Get
 
 - **Complete Restaurant Website** with online ordering
 - **Admin Panel** to manage products, orders, and bookings
 - **Table Booking System** for restaurant reservations
 - **PostgreSQL Database** - professional database for better performance
 
-## 🚀 Quick Start (3 Steps)
+##  Quick Start (3 Steps)
 
 ### Step 1: Install Requirements (One Time Only)
 - Install **Node.js** from [nodejs.org](https://nodejs.org) (choose LTS version)
@@ -46,19 +46,19 @@ npm install
 **Double-click `start-dev.bat`** - That's it! 
 
 The script will:
-- ✅ Connect to PostgreSQL database
-- ✅ Start the backend server (API)
-- ✅ Start the frontend website
-- ✅ Open everything in your browser
+-  Connect to PostgreSQL database
+-  Start the backend server (API)
+-  Start the frontend website
+-  Open everything in your browser
 
-## 🌐 Access Your Website
+##  Access Your Website
 
 After starting:
 - **Website**: http://localhost:3000
 - **Admin Panel**: http://localhost:3000/admin
 - **API**: http://localhost:3001
 
-## 👤 Demo Accounts
+##  Demo Accounts
 
 **Admin Account** (Full Access):
 - Email: `admin@sucurries.com`
@@ -68,7 +68,7 @@ After starting:
 - Email: `user@sucurries.com`
 - Password: `user123`
 
-## 📁 Database Information
+##  Database Information
 
 Your restaurant data is stored in PostgreSQL:
 - **Host**: localhost:5432
@@ -82,9 +82,9 @@ This database contains:
 - Table bookings
 - User accounts
 
-**💡 Tip**: Use pgAdmin to backup your database regularly!
+** Tip**: Use pgAdmin to backup your database regularly!
 
-## 🛠️ Easy Management
+##  Easy Management
 
 ### Adding Products
 1. Go to http://localhost:3000/admin
@@ -103,7 +103,7 @@ This database contains:
 2. View all bookings in admin panel
 3. Manage reservations easily
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 **If something doesn't work:**
 
@@ -115,7 +115,7 @@ This database contains:
 - Close all command windows and try again
 - Or restart your computer
 
-## 📞 Support
+##  Support
 
 The system uses:
 - **PostgreSQL Database** - Professional database for better performance and scalability
@@ -124,16 +124,16 @@ The system uses:
 
 Everything is designed to work reliably with professional-grade database!
 
-## 🎯 Features
+##  Features
 
-✅ **Product Catalog** - Add/edit curry products
-✅ **Shopping Cart** - Customers can order online
-✅ **Table Booking** - Restaurant reservation system
-✅ **Order Management** - Track all orders
-✅ **User Accounts** - Customer registration/login
-✅ **Admin Panel** - Full management interface
-✅ **Mobile Friendly** - Works on phones and tablets
-✅ **PostgreSQL Database** - Professional, scalable database
+ **Product Catalog** - Add/edit curry products
+ **Shopping Cart** - Customers can order online
+ **Table Booking** - Restaurant reservation system
+ **Order Management** - Track all orders
+ **User Accounts** - Customer registration/login
+ **Admin Panel** - Full management interface
+ **Mobile Friendly** - Works on phones and tablets
+ **PostgreSQL Database** - Professional, scalable database
 
 ---
 

@@ -1,15 +1,15 @@
-# 🍛 SU Curries - Complete Restaurant Management System
+#  SU Curries - Complete Restaurant Management System
 
 A comprehensive full-stack restaurant management system with customer ordering, admin dashboard, and delivery management.
 
-## 🌟 Features
+##  Features
 
-### 👥 **Multi-Role System**
+###  **Multi-Role System**
 - **Customer Interface**: Browse menu, place orders, make reservations
 - **Admin Dashboard**: Comprehensive management with real-time analytics
 - **Driver Portal**: Delivery management and tracking
 
-### 🛒 **Customer Features**
+###  **Customer Features**
 - Product catalog with search and filtering
 - Shopping cart with persistence
 - Secure checkout with address management
@@ -17,7 +17,7 @@ A comprehensive full-stack restaurant management system with customer ordering, 
 - Table booking system
 - User profile management
 
-### 👨‍💼 **Admin Features**
+###  **Admin Features**
 - Real-time dashboard with analytics
 - Order management and status tracking
 - User management with statistics
@@ -26,13 +26,13 @@ A comprehensive full-stack restaurant management system with customer ordering, 
 - Marketing campaigns and promotions
 - Comprehensive reporting
 
-### 🚚 **Driver Features**
+###  **Driver Features**
 - Delivery dashboard
 - Order pickup and delivery workflow
 - Real-time status updates
 - Delivery notes and tracking
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **React 18** with TypeScript
@@ -48,7 +48,7 @@ A comprehensive full-stack restaurant management system with customer ordering, 
 - **JWT** authentication
 - **Swagger** API documentation
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js (v16+)
@@ -72,7 +72,7 @@ A comprehensive full-stack restaurant management system with customer ordering, 
 - **Admin Dashboard**: http://localhost:3000/admin
 - **Driver Portal**: http://localhost:3000/driver
 
-## 👤 Demo Accounts
+##  Demo Accounts
 
 ### Admin Account
 - **Email**: admin@sucurries.com
@@ -91,7 +91,7 @@ A comprehensive full-stack restaurant management system with customer ordering, 
 - **Password**: driver123
 - **Access**: Delivery management dashboard
 
-## 📊 Mock Data
+##  Mock Data
 
 The system includes comprehensive test data:
 - **100+ Orders** distributed across customer accounts
@@ -100,7 +100,7 @@ The system includes comprehensive test data:
 - **4 Marketing Campaigns** with engagement metrics
 - **4 Promotional Codes** with usage tracking
 
-## 🗄️ Database Configuration
+##  Database Configuration
 
 ### PostgreSQL Setup
 - **Host**: localhost:5432
@@ -108,7 +108,7 @@ The system includes comprehensive test data:
 - **User**: su_foods_user
 - **Password**: su_foods_password
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 su-curries/
@@ -139,7 +139,7 @@ su-curries/
 └── README.md               # This file
 ```
 
-## 🛠️ Development Scripts
+##  Development Scripts
 
 ### Root Level Scripts
 - `start-dev.bat` - Start both frontend and backend servers
@@ -163,7 +163,7 @@ npm run build      # Build for production
 npm run start:prod # Start production server
 ```
 
-## 🎨 Design System
+##  Design System
 
 ### Color Palette
 - **Primary**: #ff6b35 (Orange)
@@ -179,7 +179,7 @@ npm run start:prod # Start production server
 - Modern, clean interface design
 - Mobile-responsive layout
 
-## 🔐 Security Features
+##  Security Features
 
 - JWT-based authentication
 - Role-based access control
@@ -188,7 +188,7 @@ npm run start:prod # Start production server
 - CORS protection
 - Rate limiting
 
-## 📈 Analytics & Reporting
+##  Analytics & Reporting
 
 The admin dashboard provides comprehensive analytics:
 - Real-time revenue tracking
@@ -198,7 +198,7 @@ The admin dashboard provides comprehensive analytics:
 - Marketing campaign effectiveness
 - Booking patterns and insights
 
-## 🧪 Testing
+##  Testing
 
 ### Test Data
 - Realistic order history spanning 6 months
@@ -215,7 +215,7 @@ The admin dashboard provides comprehensive analytics:
 - [ ] User data isolation
 - [ ] Real-time analytics accuracy
 
-## 🚀 Production Deployment
+##  Production Deployment
 
 1. **Build the application**:
    ```bash
@@ -236,24 +236,24 @@ The admin dashboard provides comprehensive analytics:
 4. **Serve frontend**:
    The built frontend is served from the backend's public folder.
 
-## 📞 Support
+##  Support
 
 For technical support or questions about the application:
 - Check the comprehensive documentation
 - Review the test application guide
 - Use the demo accounts for testing
 
-## 🎯 Key Achievements
+##  Key Achievements
 
-✅ **Complete Restaurant System** - Full-featured ordering and management
-✅ **Multi-Role Architecture** - Customer, Admin, Driver interfaces
-✅ **Real-Time Analytics** - Live dashboard with actual data insights
-✅ **Professional UI/UX** - Consistent dark theme and modern design
-✅ **Comprehensive Testing** - Extensive mock data for thorough testing
-✅ **Production Ready** - Scalable architecture and security features
-✅ **PostgreSQL Integration** - Professional database setup
-✅ **Zero Static Data** - All information calculated from real data
+ **Complete Restaurant System** - Full-featured ordering and management
+ **Multi-Role Architecture** - Customer, Admin, Driver interfaces
+ **Real-Time Analytics** - Live dashboard with actual data insights
+ **Professional UI/UX** - Consistent dark theme and modern design
+ **Comprehensive Testing** - Extensive mock data for thorough testing
+ **Production Ready** - Scalable architecture and security features
+ **PostgreSQL Integration** - Professional database setup
+ **Zero Static Data** - All information calculated from real data
 
 ---
 
-**SU Curries** - A complete restaurant management solution built with modern technologies and best practices. 🍛✨
+**SU Curries** - A complete restaurant management solution built with modern technologies and best practices. 

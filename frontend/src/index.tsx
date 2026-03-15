@@ -8,6 +8,22 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import './i18n';
 
+if (process.env.NODE_ENV === 'development' && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    registrations.forEach((registration) => {
+      registration.unregister();
+    });
+  });
+
+  if ('caches' in window) {
+    caches.keys().then((cacheKeys) => {
+      cacheKeys.forEach((cacheKey) => {
+        caches.delete(cacheKey);
+      });
+    });
+  }
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
